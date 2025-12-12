@@ -127,7 +127,7 @@ export default function Contact({ onNavigate }: ContactProps) {
           className="text-center mt-20 pt-12 border-t border-cream/10"
         >
           <p className="font-mono text-xs text-cream/40">
-            © 2024 Portfolio of Life — Designed for MIT Media Lab Critical Matter Application
+            © 2024 Portfolio — Designed for MIT Media Lab Critical Matter Application
           </p>
         </motion.div>
       </div>

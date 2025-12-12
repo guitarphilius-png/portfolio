@@ -27,7 +27,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="font-mono text-xs uppercase tracking-[0.2em] text-charcoal/60 mb-8"
           >
-            Portfolio of Life
+            Portfolio
           </motion.p>
           
           <motion.h1
@@ -38,9 +38,7 @@ export default function Hero({ onNavigate }: HeroProps) {
           >
             Artist—Founder—
             <br />
-            Researcher—
-            <br />
-            Metacognitive Systems Designer
+            Researcher
           </motion.h1>
           
           <motion.p
