@@ -15,18 +15,6 @@ interface Theorist {
 const theorists: Theorist[] = [
   {
     id: 1,
-    name: "Marshall McLuhan",
-    period: "1960s-1980s",
-    influence: "Media Theory",
-    keyIdeas: [
-      "The medium is the message",
-      "Hot and cool media",
-      "Global village"
-    ],
-    relevance: "McLuhan's understanding of how media technologies reshape human consciousness and social organization informs my approach to computational systems as more than neutral tools—they fundamentally alter how we perceive and interact with reality."
-  },
-  {
-    id: 2,
     name: "Henri Lefebvre",
     period: "1960s-1990s",
     influence: "Urban Theory",
@@ -38,40 +26,52 @@ const theorists: Theorist[] = [
     relevance: "Lefebvre's critique of how capitalism produces space guides my investigation of how digital technologies create new spatial logics and power relations in urban environments."
   },
   {
-    id: 3,
-    name: "Donna Haraway",
-    period: "1980s-Present",
-    influence: "Feminist Technoscience",
+    id: 2,
+    name: "Merleau-Ponty",
+    period: "1940s–1960s",
+    influence: "Phenomenology",
     keyIdeas: [
-      "Cyborg theory",
-      "Situated knowledges",
-      "Staying with the trouble"
+      "Embodied perception",
+      "The primacy of lived experience",
+      "The body as our primary way of being-in-the-world"
     ],
-    relevance: "Haraway's insistence on partial perspectives and accountability in knowledge production shapes my commitment to reflexive, community-centered research methodologies."
+    relevance: "Merleau-Ponty's account of perception as an embodied, pre-reflective process grounds my belief that AI must model human experience through lived context—not abstraction. His work shapes my approach to proxemic intelligence and cultural life-world modeling."
+  },
+  {
+    id: 3,
+    name: "Edward T. Hall",
+    period: "1950s–1970s",
+    influence: "Cultural Anthropology / Proxemics",
+    keyIdeas: [
+      "Proxemics",
+      "High-context vs. low-context cultures",
+      "The silent language of space"
+    ],
+    relevance: "Hall's understanding of culturally mediated spatial behavior directly informs my research into cultural world models. His insights help me frame AI not as a spatial calculator but as a system that must interpret human distance, movement, and gesture through cultural meaning."
   },
   {
     id: 4,
-    name: "Langdon Winner",
-    period: "1970s-Present",
-    influence: "Philosophy of Technology",
+    name: "Shannon Mattern",
+    period: "2000s–Present",
+    influence: "Urban Media Studies",
     keyIdeas: [
-      "Do artifacts have politics?",
-      "Technological determinism",
-      "Democratic technology"
+      "Urban infrastructures as knowledge systems",
+      "Media and the built environment",
+      "Maintenance, care, and epistemic design"
     ],
-    relevance: "Winner's argument that technologies embody political values drives my practice of interrogating the assumptions and power structures embedded in computational systems."
+    relevance: "Mattern's framing of cities as cognitive infrastructures influences my study of how notifications, platforms, and spatial systems choreograph urban life. Her work inspires my prototypes that treat communities as distributed, thinking ecologies."
   },
   {
     id: 5,
-    name: "Ruha Benjamin",
-    period: "2010s-Present",
-    influence: "Race & Technology",
+    name: "Katherine McKittrick",
+    period: "2000s–Present",
+    influence: "Black Geographies",
     keyIdeas: [
-      "The New Jim Code",
-      "Discriminatory design",
-      "Abolitionist tools"
+      "Black spatial thought",
+      "Geography as racialized experience",
+      "Place, memory, and liberation"
     ],
-    relevance: "Benjamin's analysis of how technology can encode and amplify racial inequity informs my focus on making algorithmic bias visible and developing more equitable technological practices."
+    relevance: "McKittrick's articulation of Black spatial life reframes my observations of Harlem, proxemics, and platform-mediated environments. Her work grounds my belief that world models must account for histories of race, place, and inequity."
   }
 ];
 
@@ -98,8 +98,8 @@ export default function TheorySection() {
           </h2>
           
           <p className="font-body text-lg sm:text-xl text-charcoal/70 leading-[1.7] max-w-3xl">
-            My work draws from critical traditions in media theory, urban studies, 
-            feminist technoscience, and philosophy of technology.
+            My work draws from critical traditions in phenomenology, cultural anthropology, 
+            urban media studies, and Black geographies.
           </p>
         </motion.div>
 
