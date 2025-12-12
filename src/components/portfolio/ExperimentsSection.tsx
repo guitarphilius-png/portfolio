@@ -77,8 +77,8 @@ export default function ExperimentsSection() {
       : experiments.filter((exp) => exp.category === activeCategory);
 
   return (
-    <section ref={ref} id="experiments" className="min-h-screen bg-cream py-32">
-      <div className="container mx-auto px-8 lg:px-16">
+    <section ref={ref} id="experiments" className="min-h-screen bg-cream py-16 sm:py-24 md:py-32">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -89,22 +89,22 @@ export default function ExperimentsSection() {
             03 / Experiments
           </p>
 
-          <h2 className="font-display font-light text-5xl md:text-6xl text-charcoal mb-8 leading-tight">
+          <h2 className="font-display font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6 sm:mb-8 leading-tight">
             Research Through Making
           </h2>
 
-          <p className="font-body text-xl text-charcoal/70 leading-[1.7] max-w-3xl mb-12">
+          <p className="font-body text-lg sm:text-xl text-charcoal/70 leading-[1.7] max-w-3xl mb-8 sm:mb-12">
             A selection of experimental projects investigating computational
             systems, urban infrastructure, and media technologies.
           </p>
 
           {/* Category Filter */}
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex gap-2 sm:gap-4 flex-wrap">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`font-mono text-xs uppercase tracking-wider px-6 py-3 rounded-sm transition-all duration-300 ${
+                className={`font-mono text-xs uppercase tracking-wider px-4 sm:px-6 py-2 sm:py-3 rounded-sm transition-all duration-300 ${
                   activeCategory === category
                     ? "bg-amber text-white"
                     : "bg-white text-charcoal/60 hover:bg-charcoal/5"
@@ -131,7 +131,7 @@ export default function ExperimentsSection() {
                     expandedId === experiment.id ? null : experiment.id,
                   )
                 }
-                className="w-full p-8 text-left"
+                className="w-full p-4 sm:p-6 md:p-8 text-left"
               >
                 <div className="flex items-start justify-between gap-8">
                   <div className="flex-1">
@@ -146,7 +146,7 @@ export default function ExperimentsSection() {
                         {experiment.domain}
                       </span>
                     </div>
-                    <h3 className="font-display text-3xl text-charcoal mb-4">
+                    <h3 className="font-display text-2xl sm:text-3xl text-charcoal mb-3 sm:mb-4">
                       {experiment.title}
                     </h3>
                     <p className="font-body text-charcoal/70 leading-[1.7]">
@@ -170,7 +170,7 @@ export default function ExperimentsSection() {
                   animate={{ opacity: 1, height: "auto" }}
                   exit={{ opacity: 0, height: 0 }}
                   transition={{ duration: 0.4 }}
-                  className="px-8 pb-8 space-y-8"
+                  className="px-4 sm:px-6 md:px-8 pb-4 sm:pb-6 md:pb-8 space-y-6 sm:space-y-8"
                 >
                   <div className="border-t border-charcoal/10 pt-8">
                     <h4 className="font-mono text-xs uppercase tracking-wider text-charcoal mb-4">

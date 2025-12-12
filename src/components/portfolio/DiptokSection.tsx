@@ -44,8 +44,8 @@ export default function DiptokSection() {
   const [hoveredSide, setHoveredSide] = useState<{ id: number; side: 'left' | 'right' } | null>(null);
 
   return (
-    <section ref={ref} id="diptok" className="min-h-screen bg-white py-32">
-      <div className="container mx-auto px-8 lg:px-16">
+    <section ref={ref} id="diptok" className="min-h-screen bg-white py-16 sm:py-24 md:py-32">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -56,17 +56,17 @@ export default function DiptokSection() {
             02 / Diptok
           </p>
           
-          <h2 className="font-display font-light text-5xl md:text-6xl text-charcoal mb-8 leading-tight">
+          <h2 className="font-display font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6 sm:mb-8 leading-tight">
             Visual Dialectics
           </h2>
           
-          <p className="font-body text-xl text-charcoal/70 leading-[1.7] max-w-3xl">
+          <p className="font-body text-lg sm:text-xl text-charcoal/70 leading-[1.7] max-w-3xl">
             Diptok is a series of visual comparisons that juxtapose physical and digital realities, 
             revealing the tensions between human experience and computational mediation.
           </p>
         </motion.div>
 
-        <div className="space-y-24">
+        <div className="space-y-12 sm:space-y-16 md:space-y-24">
           {diptychs.map((diptych, index) => (
             <motion.div
               key={diptych.id}
@@ -75,7 +75,7 @@ export default function DiptokSection() {
               transition={{ delay: 0.2 + index * 0.1, duration: 0.6 }}
               className="max-w-6xl mx-auto"
             >
-              <div className="grid md:grid-cols-2 gap-4 mb-6">
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mb-4 sm:mb-6">
                 {/* Left Image */}
                 <div
                   className="relative group cursor-pointer"

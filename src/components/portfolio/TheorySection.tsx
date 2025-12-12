@@ -81,8 +81,8 @@ export default function TheorySection() {
   const [selectedTheorist, setSelectedTheorist] = useState<Theorist | null>(null);
 
   return (
-    <section ref={ref} id="theory" className="min-h-screen bg-white py-32">
-      <div className="container mx-auto px-8 lg:px-16">
+    <section ref={ref} id="theory" className="min-h-screen bg-white py-16 sm:py-24 md:py-32">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -93,11 +93,11 @@ export default function TheorySection() {
             04 / Theoretical Foundations
           </p>
           
-          <h2 className="font-display font-light text-5xl md:text-6xl text-charcoal mb-8 leading-tight">
+          <h2 className="font-display font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6 sm:mb-8 leading-tight">
             Intellectual Lineage
           </h2>
           
-          <p className="font-body text-xl text-charcoal/70 leading-[1.7] max-w-3xl">
+          <p className="font-body text-lg sm:text-xl text-charcoal/70 leading-[1.7] max-w-3xl">
             My work draws from critical traditions in media theory, urban studies, 
             feminist technoscience, and philosophy of technology.
           </p>
@@ -120,13 +120,13 @@ export default function TheorySection() {
                 {/* Timeline dot */}
                 <div className="absolute left-6 top-6 w-5 h-5 rounded-full bg-amber border-4 border-white hidden md:block" />
 
-                <div className="md:ml-24 bg-cream p-8 rounded-sm hover:shadow-[0_4px_24px_rgba(0,0,0,0.08)] transition-all duration-400">
+                <div className="md:ml-24 bg-cream p-4 sm:p-6 md:p-8 rounded-sm hover:shadow-[0_4px_24px_rgba(0,0,0,0.08)] transition-all duration-400">
                   <div className="flex items-start justify-between gap-8 mb-4">
                     <div>
-                      <h3 className="font-display text-2xl text-charcoal mb-2">
+                      <h3 className="font-display text-xl sm:text-2xl text-charcoal mb-2">
                         {theorist.name}
                       </h3>
-                      <div className="flex items-center gap-4">
+                      <div className="flex items-center gap-2 sm:gap-4 flex-wrap">
                         <span className="font-mono text-xs text-charcoal/60">
                           {theorist.period}
                         </span>
@@ -138,7 +138,7 @@ export default function TheorySection() {
                     
                     <button
                       onClick={() => setSelectedTheorist(theorist)}
-                      className="font-mono text-xs uppercase tracking-wider text-amber hover:text-charcoal transition-colors whitespace-nowrap"
+                      className="font-mono text-xs uppercase tracking-wider text-amber hover:text-charcoal transition-colors whitespace-nowrap mt-2 sm:mt-0"
                     >
                       View Details →
                     </button>
@@ -172,7 +172,7 @@ export default function TheorySection() {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="max-w-4xl mx-auto mt-24 border-l-4 border-amber pl-12 py-8"
         >
-          <p className="font-display text-3xl text-charcoal/90 leading-relaxed italic">
+          <p className="font-display text-xl sm:text-2xl md:text-3xl text-charcoal/90 leading-relaxed italic">
             "Theory without practice is empty; practice without theory is blind. 
             My work seeks to hold both in productive tension."
           </p>

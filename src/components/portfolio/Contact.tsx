@@ -17,7 +17,7 @@ export default function Contact({ onNavigate }: ContactProps) {
   };
 
   return (
-    <section ref={ref} id="contact" className="min-h-screen bg-charcoal py-32 relative overflow-hidden">
+    <section ref={ref} id="contact" className="min-h-screen bg-charcoal py-16 sm:py-24 md:py-32 relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-amber/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-research-blue/10 rounded-full blur-3xl" />
@@ -39,7 +39,7 @@ export default function Contact({ onNavigate }: ContactProps) {
             Meaningful Together
           </h2>
           
-          <p className="font-body text-xl text-cream/70 leading-[1.7] mb-16">
+          <p className="font-body text-lg sm:text-xl text-cream/70 leading-[1.7] mb-12 sm:mb-16">
             I'm seeking opportunities to collaborate on projects that use technology 
             to address social challenges and expand human understanding.
           </p>
@@ -47,7 +47,7 @@ export default function Contact({ onNavigate }: ContactProps) {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
             <a
               href="mailto:portfolio@example.com"
-              className="group flex items-center gap-3 bg-amber text-white px-8 py-4 rounded-sm hover:bg-amber/90 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(212,165,116,0.3)]"
+              className="group flex items-center gap-3 bg-amber text-white px-6 sm:px-8 py-3 sm:py-4 rounded-sm hover:bg-amber/90 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(212,165,116,0.3)] text-sm sm:text-base"
             >
               <Mail className="w-5 h-5" />
               <span className="font-mono text-sm uppercase tracking-wider">Get in Touch</span>
@@ -55,7 +55,7 @@ export default function Contact({ onNavigate }: ContactProps) {
             
             <button
               onClick={handleDownloadPDF}
-              className="group flex items-center gap-3 bg-cream/10 text-cream px-8 py-4 rounded-sm hover:bg-cream/20 transition-all duration-300 border border-cream/20"
+              className="group flex items-center gap-3 bg-cream/10 text-cream px-6 sm:px-8 py-3 sm:py-4 rounded-sm hover:bg-cream/20 transition-all duration-300 border border-cream/20 text-sm sm:text-base"
             >
               <FileText className="w-5 h-5" />
               <span className="font-mono text-sm uppercase tracking-wider">Download PDF</span>
@@ -67,7 +67,7 @@ export default function Contact({ onNavigate }: ContactProps) {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.3, duration: 0.6 }}
-            className="grid md:grid-cols-3 gap-12 text-left"
+            className="grid md:grid-cols-3 gap-8 sm:gap-12 text-left"
           >
             <div>
               <h3 className="font-mono text-xs uppercase tracking-wider text-amber mb-4">
@@ -127,7 +127,7 @@ export default function Contact({ onNavigate }: ContactProps) {
           className="text-center mt-20 pt-12 border-t border-cream/10"
         >
           <p className="font-mono text-xs text-cream/40">
-            © 2024 Portfolio — Designed for MIT Media Lab Critical Matter Application
+            © 2025 Portfolio — Designed for MIT Media Lab Critical Matter Application
           </p>
         </motion.div>
       </div>

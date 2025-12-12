@@ -14,27 +14,18 @@ export default function Hero({ onNavigate }: HeroProps) {
         backgroundSize: '50px 50px'
       }} />
       
-      <div className="container mx-auto px-8 lg:px-16 relative z-10">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-5xl"
         >
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="font-mono text-xs uppercase tracking-[0.2em] text-charcoal/60 mb-8"
-          >
-            Portfolio
-          </motion.p>
-          
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="font-display font-light text-6xl md:text-7xl lg:text-8xl text-charcoal leading-[1.1] mb-6"
+            className="font-display font-light text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-charcoal leading-[1.1] mb-6"
           >
             Artist—Founder—
             <br />
@@ -45,7 +36,7 @@ export default function Hero({ onNavigate }: HeroProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.6 }}
-            className="font-body text-xl md:text-2xl text-charcoal/70 max-w-2xl leading-relaxed mb-12"
+            className="font-body text-lg sm:text-xl md:text-2xl text-charcoal/70 max-w-2xl leading-relaxed mb-8 sm:mb-12"
           >
             A research portfolio exploring the intersections of computational media, 
             urban systems, and critical theory for MIT Media Lab Critical Matter.

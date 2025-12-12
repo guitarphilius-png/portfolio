@@ -7,8 +7,8 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} id="about" className="min-h-screen bg-cream py-32">
-      <div className="container mx-auto px-8 lg:px-16">
+    <section ref={ref} id="about" className="min-h-screen bg-cream py-16 sm:py-24 md:py-32">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -19,14 +19,14 @@ export default function About() {
               01 / About
             </p>
             
-            <h2 className="font-display font-light text-5xl md:text-6xl text-charcoal mb-12 leading-tight">
+            <h2 className="font-display font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal mb-8 sm:mb-12 leading-tight">
               Bridging Computational
               <br />
               Media & Urban Systems
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-16 mt-16">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 mt-8 sm:mt-12 md:mt-16">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -86,9 +86,9 @@ export default function About() {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="mt-24 border-l-4 border-amber pl-12 py-8"
+            className="mt-12 sm:mt-16 md:mt-24 border-l-4 border-amber pl-4 sm:pl-8 md:pl-12 py-6 sm:py-8"
           >
-            <p className="font-display text-3xl text-charcoal/90 leading-relaxed italic">
+            <p className="font-display text-xl sm:text-2xl md:text-3xl text-charcoal/90 leading-relaxed italic">
               "Technology is never neutral—it carries the values, biases, and power structures 
               of its creators. My work seeks to make these invisible forces visible."
             </p>
