@@ -38,7 +38,9 @@ export default function Hero({ onNavigate }: HeroProps) {
           >
             Artist—Founder—
             <br />
-            Researcher
+            Researcher—
+            <br />
+            Metacognitive Systems Designer
           </motion.h1>
           
           <motion.p
