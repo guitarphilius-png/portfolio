@@ -69,7 +69,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               <div className="relative w-full h-full max-h-[600px] overflow-hidden rounded-sm bg-charcoal/5">
                 {!imageError ? (
                   <img
-                    src="/hero-photo.jpg"
+                    src="/old2-hero-photo.jpg"
                     alt="Jean Philius"
                     className="w-full h-full object-cover object-center"
                     onError={() => setImageError(true)}
@@ -78,7 +78,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                   <div className="absolute inset-0 flex items-center justify-center p-8">
                     <p className="font-mono text-xs text-charcoal/40 text-center">
                       Add your photo as<br />
-                      <span className="text-amber/60">/public/hero-photo.jpg</span>
+                      <span className="text-amber/60">/public/old2-hero-photo.jpg</span>
                     </p>
                   </div>
                 )}
