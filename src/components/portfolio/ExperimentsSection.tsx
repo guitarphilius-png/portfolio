@@ -18,18 +18,18 @@ interface Experiment {
 const experiments: Experiment[] = [
   {
     id: 1,
-    title: "Lorem ipsum dolor",
+    title: "When a City Thinks Together: Food, Constraints, and Collective Agency (Corbin Hill Food Project)",
     category: "Systems",
-    year: "2025",
-    domain: "Placeholder",
+    year: "Ongoing",
+    domain: "Community Infrastructure",
     summary:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "A community-run food distribution system operating at the intersection of public health, urban logistics, and mutual aid. This project examines how constraints, space, and platform infrastructures co-produce collective intelligence in everyday operations.",
     methodology:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Embedded field observation through volunteer participation in last-mile food distribution. Attention was placed on constraint negotiation (materials, time, labor), spatial organization, platform coordination (DoorDash/Uber), and the emergence of tacit logistical knowledge during live operations.\n\nKey signals:\n\n“Embedded”\n\n“Constraint negotiation”\n\n“Emergence”\n\n“Live operations”",
     findings:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "• Collective agency emerges through constraint-aware improvisation rather than centralized optimization.\n• Urban platforms function as environmental actors, shaping cognition and workflow without direct control.\n• Tacit, embodied knowledge (folding, packing, routing) operates as a distributed intelligence layer rarely captured by formal systems.",
     relevance:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "This project frames community infrastructure as a thinking system, where space, tools, and platforms co-produce action. It aligns with Critical Matter’s focus on how power, computation, and material conditions shape lived environments.",
   },
   {
     id: 2,
