@@ -1,100 +1,108 @@
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 
-export default function About() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
+export default function StructuralOrientation() {
   return (
-    <section ref={ref} id="about" className="min-h-screen bg-cream py-16 sm:py-24 md:py-32">
-      <div className="container mx-auto px-4 sm:px-8 lg:px-16">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-charcoal/60 mb-8">
-              01 / About
-            </p>
-            
-            <h2 className="font-display font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal mb-8 sm:mb-12 leading-tight">
-              Bridging Computational
-              <br />
-              Media & Urban Systems
-            </h2>
-          </motion.div>
+    <div className="min-h-screen bg-white text-neutral-900 font-sans">
+      {/* Header */}
+      <section className="max-w-4xl mx-auto px-6 pt-24 pb-16">
+        <motion.h1
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl md:text-4xl font-light leading-tight"
+        >
+          How I Think
+        </motion.h1>
 
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 mt-8 sm:mt-12 md:mt-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2, duration: 0.6 }}
-            >
-              <h3 className="font-display text-2xl text-charcoal mb-6">Background</h3>
-              <p className="font-body text-charcoal/70 leading-[1.7] mb-6">
-                My work exists at the intersection of computational media, urban infrastructure, 
-                and critical theory. Through a practice that spans artistic intervention, 
-                technological development, and theoretical inquiry, I investigate how digital 
-                systems reshape our understanding of space, identity, and collective experience.
-              </p>
-              <p className="font-body text-charcoal/70 leading-[1.7]">
-                This portfolio documents experiments in computational aesthetics, urban sensing, 
-                and media archaeology—each project asking how we might build more thoughtful, 
-                equitable technological futures.
-              </p>
-            </motion.div>
+        <motion.p
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mt-6 text-lg leading-relaxed max-w-3xl"
+        >
+          I study and design how space becomes meaningful and actionable—how
+          perception, narrative, and computation co-produce agency in shared
+          environments.
+        </motion.p>
+      </section>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.3, duration: 0.6 }}
-            >
-              <h3 className="font-display text-2xl text-charcoal mb-6">Approach</h3>
-              <div className="space-y-6">
-                <div className="border-l-2 border-amber pl-6">
-                  <h4 className="font-mono text-xs uppercase tracking-wider text-charcoal mb-2">
-                    Systems Thinking
-                  </h4>
-                  <p className="font-body text-sm text-charcoal/70 leading-relaxed">
-                    Understanding technology as embedded within social, political, and ecological networks
-                  </p>
-                </div>
-                <div className="border-l-2 border-amber pl-6">
-                  <h4 className="font-mono text-xs uppercase tracking-wider text-charcoal mb-2">
-                    Critical Making
-                  </h4>
-                  <p className="font-body text-sm text-charcoal/70 leading-relaxed">
-                    Building prototypes that question assumptions and reveal hidden structures
-                  </p>
-                </div>
-                <div className="border-l-2 border-amber pl-6">
-                  <h4 className="font-mono text-xs uppercase tracking-wider text-charcoal mb-2">
-                    Interdisciplinary Research
-                  </h4>
-                  <p className="font-body text-sm text-charcoal/70 leading-relaxed">
-                    Drawing from media theory, urban studies, and computational design
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-
-          {/* Pull Quote */}
-          <motion.blockquote
-            initial={{ opacity: 0 }}
-            animate={isInView ? { opacity: 1 } : {}}
-            transition={{ delay: 0.5, duration: 0.8 }}
-            className="mt-12 sm:mt-16 md:mt-24 border-l-4 border-amber pl-4 sm:pl-8 md:pl-12 py-6 sm:py-8"
-          >
-            <p className="font-display text-xl sm:text-2xl md:text-3xl text-charcoal/90 leading-relaxed italic">
-              "Technology is never neutral—it carries the values, biases, and power structures 
-              of its creators. My work seeks to make these invisible forces visible."
-            </p>
-          </motion.blockquote>
+      {/* Diagram Section */}
+      <section className="max-w-5xl mx-auto px-6 pb-24 grid grid-cols-1 md:grid-cols-4 gap-12">
+        {/* Trunk */}
+        <div className="md:col-span-4 border-b pb-8">
+          <h2 className="text-sm uppercase tracking-widest text-neutral-500">The Throughline</h2>
+          <p className="mt-4 text-base">
+            How places, stories, and systems shape what people can see, do, and become.
+          </p>
         </div>
-      </div>
-    </section>
+
+        {/* Pillars */}
+        <div className="border-l pl-6">
+          <h3 className="text-sm uppercase tracking-widest text-neutral-500">
+            Space
+          </h3>
+          <p className="mt-3 text-sm">
+            Spatial phenomenology and the production of space. Environments are
+            lived, produced, and unevenly distribute agency.
+          </p>
+        </div>
+
+        <div className="border-l pl-6">
+          <h3 className="text-sm uppercase tracking-widest text-neutral-500">
+            Narrative
+          </h3>
+          <p className="mt-3 text-sm">
+            Language and narrative function as infrastructure, shaping
+            coordination, legitimacy, and futures.
+          </p>
+        </div>
+
+        <div className="border-l pl-6">
+          <h3 className="text-sm uppercase tracking-widest text-neutral-500">
+            Computation
+          </h3>
+          <p className="mt-3 text-sm">
+            Collective and metacognitive systems that allow communities to
+            sense, reflect, and adapt.
+          </p>
+        </div>
+
+        {/* Seams */}
+        <div className="md:col-span-4 mt-16">
+          <h2 className="text-sm uppercase tracking-widest text-neutral-500">
+            Seams
+          </h2>
+
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+              <h4 className="text-sm font-medium">Perception ↔ Agency</h4>
+              <p className="mt-2 text-sm">
+                What must be perceptible for action to become possible?
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-medium">Space ↔ Power</h4>
+              <p className="mt-2 text-sm">
+                How environments and infrastructures authorize or constrain
+                behavior.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-medium">Narrative ↔ Action</h4>
+              <p className="mt-2 text-sm">
+                How stories make futures thinkable or unthinkable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="max-w-4xl mx-auto px-6 pb-16 text-xs text-neutral-400">
+        A quiet map for how the work fits together. Read the projects through it — or ignore it and wander.
+      </footer>
+    </div>
   );
 }
