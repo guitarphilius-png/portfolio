@@ -7,7 +7,7 @@ interface HeroProps {
 
 export default function Hero({ onNavigate }: HeroProps) {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-cream relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center bg-cream relative overflow-hidden">
       {/* Subtle grid overlay */}
       <div
         className="absolute inset-0 opacity-[0.02]"
