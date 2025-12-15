@@ -44,7 +44,7 @@ export default function Navigation({ activeSection, onNavigate }: NavigationProp
       <div className="container mx-auto px-4 sm:px-8 lg:px-16">
         <div className="flex items-center justify-between py-4 sm:py-6">
           <button
-            onClick={() => handleNavClick('hero')}
+            onClick={() => handleNavClick('about')}
             className="font-mono text-xs uppercase tracking-[0.2em] text-charcoal hover:text-amber transition-colors"
           >
             Portfolio

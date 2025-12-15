@@ -19,10 +19,6 @@ export default function About() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-charcoal/60 mb-8">
-              01 / About
-            </p>
-
             <h2 className="font-display font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal mb-8 sm:mb-12 leading-tight">
               How Space, Narrative,
               <br />

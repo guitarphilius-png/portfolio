@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import Hero from "./portfolio/Hero";
 import Navigation from "./portfolio/Navigation";
 import About from "./portfolio/About";
 import DiptokSection from "./portfolio/DiptokSection";
@@ -8,20 +7,25 @@ import TheorySection from "./portfolio/TheorySection";
 import Contact from "./portfolio/Contact";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("hero");
+  const [activeSection, setActiveSection] = useState("about");
 
   const handleNavigate = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-    } else if (sectionId === "hero") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (sectionId === "hero" || sectionId === "about") {
+      const aboutElement = document.getElementById("about");
+      if (aboutElement) {
+        aboutElement.scrollIntoView({ behavior: "smooth" });
+      } else {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
     }
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["hero", "about", "diptok", "experiments", "theory", "contact"];
+      const sections = ["about", "diptok", "experiments", "theory", "contact"];
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
       for (const sectionId of sections) {
@@ -32,8 +36,8 @@ export default function Home() {
             setActiveSection(sectionId);
             break;
           }
-        } else if (sectionId === "hero" && window.scrollY < 100) {
-          setActiveSection("hero");
+        } else if (sectionId === "about" && window.scrollY < 100) {
+          setActiveSection("about");
         }
       }
     };
@@ -46,7 +50,6 @@ export default function Home() {
   return (
     <div className="bg-cream">
       <Navigation activeSection={activeSection} onNavigate={handleNavigate} />
-      <Hero onNavigate={handleNavigate} />
       <About />
       <DiptokSection />
       <ExperimentsSection />
