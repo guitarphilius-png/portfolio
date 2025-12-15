@@ -18,48 +18,48 @@ interface Experiment {
 const experiments: Experiment[] = [
   {
     id: 1,
-    title: "Urban Sensing Networks",
+    title: "Lorem ipsum dolor",
     category: "Systems",
-    year: "2023",
-    domain: "Urban Infrastructure",
+    year: "2025",
+    domain: "Placeholder",
     summary:
-      "A distributed sensor network mapping environmental data across urban neighborhoods to reveal patterns of inequality in air quality and noise pollution.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     methodology:
-      "Deployed 50 low-cost IoT sensors across diverse neighborhoods, collecting real-time data on air quality, noise levels, and temperature. Developed custom visualization tools to make invisible environmental disparities visible to community members.",
+      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     findings:
-      "Discovered significant correlations between socioeconomic status and environmental quality. Lower-income neighborhoods experienced 40% higher noise pollution and 25% worse air quality than affluent areas within the same city.",
+      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     relevance:
-      "This work aligns with Critical Matter's focus on making invisible systems visible and using technology to address social inequities. It demonstrates how computational tools can empower communities with data-driven advocacy.",
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     id: 2,
-    title: "Algorithmic Bias Visualization",
+    title: "Sit amet consectetur",
     category: "Media",
-    year: "2023",
-    domain: "Machine Learning",
+    year: "2025",
+    domain: "Placeholder",
     summary:
-      "An interactive installation revealing how facial recognition systems perform differently across demographic groups, making algorithmic bias tangible and experiential.",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
     methodology:
-      "Created a real-time installation using commercial facial recognition APIs, displaying confidence scores and detection rates across different faces. Participants could see how the system responded to their own faces versus others.",
+      "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
     findings:
-      "Documented performance disparities of up to 35% between demographic groups. The experiential format led to deeper understanding of algorithmic bias than traditional data presentations.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
     relevance:
-      "Demonstrates critical making as a research methodology—building systems that question other systems. Relevant to Critical Matter's emphasis on interrogating technological assumptions through practice.",
+      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
   },
   {
     id: 3,
-    title: "Memory Cartography",
+    title: "Adipisicing elit sed",
     category: "Urban",
-    year: "2022",
-    domain: "Digital Humanities",
+    year: "2025",
+    domain: "Placeholder",
     summary:
-      "A participatory mapping project collecting personal narratives about urban spaces, creating counter-maps that challenge official city narratives.",
+      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur.",
     methodology:
-      "Developed a mobile app allowing residents to pin memories, stories, and experiences to specific locations. Used natural language processing to identify themes and patterns across thousands of submissions.",
+      "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
     findings:
-      "Revealed significant gaps between official city planning narratives and lived experiences. Certain neighborhoods had rich cultural histories completely absent from municipal records.",
+      "Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
     relevance:
-      "Exemplifies Critical Matter's interest in alternative knowledge systems and community-centered research. Shows how technology can amplify marginalized voices rather than erase them.",
+      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
   },
 ];
 
