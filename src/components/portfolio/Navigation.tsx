@@ -10,10 +10,8 @@ interface NavigationProps {
 const sections = [
   { id: 'hero', label: 'Home' },
   { id: 'about', label: 'About' },
-  { id: 'diptok', label: 'Diptok' },
   { id: 'experiments', label: 'Experiments' },
   { id: 'theory', label: 'Theory' },
-  { id: 'contact', label: 'Contact' },
 ];
 
 export default function Navigation({ activeSection, onNavigate }: NavigationProps) {

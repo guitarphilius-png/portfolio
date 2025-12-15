@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import Navigation from "./portfolio/Navigation";
 import About from "./portfolio/About";
-import DiptokSection from "./portfolio/DiptokSection";
 import ExperimentsSection from "./portfolio/ExperimentsSection";
 import TheorySection from "./portfolio/TheorySection";
-import Contact from "./portfolio/Contact";
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
@@ -25,7 +23,7 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about", "diptok", "experiments", "theory", "contact"];
+      const sections = ["about", "experiments", "theory"];
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
       for (const sectionId of sections) {
@@ -51,10 +49,8 @@ export default function Home() {
     <div className="bg-cream">
       <Navigation activeSection={activeSection} onNavigate={handleNavigate} />
       <About />
-      <DiptokSection />
       <ExperimentsSection />
       <TheorySection />
-      <Contact onNavigate={handleNavigate} />
     </div>
   );
 }
