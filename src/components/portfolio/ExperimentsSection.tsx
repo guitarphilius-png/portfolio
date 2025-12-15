@@ -85,12 +85,8 @@ export default function ExperimentsSection() {
           transition={{ duration: 0.6 }}
           className="max-w-6xl mx-auto mb-20"
         >
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-charcoal/60 mb-8">
-            03 / Experiments
-          </p>
-
           <h2 className="font-display font-light text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-charcoal mb-6 sm:mb-8 leading-tight">
-            Research Through Making
+            Selected Work
           </h2>
 
           <p className="font-body text-lg sm:text-xl text-charcoal/70 leading-[1.7] max-w-3xl mb-8 sm:mb-12">
