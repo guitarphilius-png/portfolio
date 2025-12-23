@@ -48,22 +48,22 @@ const experiments: Experiment[] = [
   },
   {
     id: 3,
-    title: "Adipisicing elit sed",
-    category: "Urban",
+    title: "Code Four: Real-Time AI and the Reconfiguration of Policed Space",
+    category: "Media",
     year: "2025",
-    domain: "Placeholder",
+    domain: "Ethical Tear Sheet (Draft)",
     summary:
-      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi consequatur.",
+      "Code Four positions itself as a productivity tool—using AI to transcribe, summarize, and search police body-camera footage. This tear sheet examines what the system does beyond its stated intent, focusing on how real-time inference reshapes space, evidence, and agency. This is an ongoing ethical analysis, not a verdict.",
     methodology:
-      "Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+      "Stated claims (per the company):\n• Reduce administrative burden on officers\n• Improve accuracy and consistency\n• Increase transparency and accountability\n• Help departments “do more with less”\n\nWhat the system actually introduces:\n• Converts embodied encounters into searchable data\n• Allows behavioral queries (e.g., “handled a weapon”)\n• Produces AI summaries that may replace memory\n• Embeds interpretation directly into infrastructure\n\nKey terms:\nCarceral Architecture — design systems that enforce control without walls; here, the archive itself is the enclosure.\nReal-Time Computational Space — environments that sense, record, and act while events unfold.\nInference vs. Evidence — inference predicts or interprets; Code Four collapses the distinction.\nOpacity — the right to exist without being fully legible to a system.",
     findings:
-      "Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+      "Critical observations:\n• Space becomes evidentiary; streets act as data-producing environments.\n• Interpretation moves upstream, before legal contestation.\n• AI summaries risk becoming the “official” narrative.\n• Civilians remain permanently legible while institutions stay opaque.\n\nEthical tensions (not accusations):\n• Accountability tools risk becoming prosecutorial infrastructure.\n• Automation reframes judgment as objectivity.\n• Discovery asymmetries widen (state visibility vs. defendant access).\n• Presence in space becomes a condition for data extraction.\nThe concern centers on structural asymmetry, not intent.",
     relevance:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+      "Why this matters for design & computation:\n• Technology shifts from being in space to being the space.\n• Documentation becomes pre-structured narrative.\n• Oversight drifts toward ambient governance.\nEthics cannot remain a downstream checklist. Status: ongoing ethical analysis, not peer-reviewed or exhaustive; offered as a thinking artifact, not a policy position.",
   },
 ];
 
-const categories = ["All", "Systems", "Urban", "Media"];
+const categories = ["All", "Systems", "Media"];
 
 export default function ExperimentsSection() {
   const ref = useRef(null);
@@ -145,7 +145,7 @@ export default function ExperimentsSection() {
                     <h3 className="font-display text-2xl sm:text-3xl text-charcoal mb-3 sm:mb-4">
                       {experiment.title}
                     </h3>
-                    <p className="font-body text-charcoal/70 leading-[1.7]">
+                    <p className="font-body text-charcoal/70 leading-[1.7] whitespace-pre-line">
                       {experiment.summary}
                     </p>
                   </div>
@@ -172,7 +172,7 @@ export default function ExperimentsSection() {
                     <h4 className="font-mono text-xs uppercase tracking-wider text-charcoal mb-4">
                       Methodology
                     </h4>
-                    <p className="font-body text-charcoal/70 leading-[1.7]">
+                    <p className="font-body text-charcoal/70 leading-[1.7] whitespace-pre-line">
                       {experiment.methodology}
                     </p>
                   </div>
@@ -181,7 +181,7 @@ export default function ExperimentsSection() {
                     <h4 className="font-mono text-xs uppercase tracking-wider text-charcoal mb-4">
                       Key Findings
                     </h4>
-                    <p className="font-body text-charcoal/70 leading-[1.7]">
+                    <p className="font-body text-charcoal/70 leading-[1.7] whitespace-pre-line">
                       {experiment.findings}
                     </p>
                   </div>
@@ -190,7 +190,7 @@ export default function ExperimentsSection() {
                     <h4 className="font-mono text-xs uppercase tracking-wider text-charcoal mb-4">
                       Critical Matter Relevance
                     </h4>
-                    <p className="font-body text-charcoal/70 leading-[1.7]">
+                    <p className="font-body text-charcoal/70 leading-[1.7] whitespace-pre-line">
                       {experiment.relevance}
                     </p>
                   </div>
