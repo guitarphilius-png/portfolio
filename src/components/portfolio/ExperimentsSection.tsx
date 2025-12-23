@@ -33,18 +33,18 @@ const experiments: Experiment[] = [
   },
   {
     id: 2,
-    title: "Sit amet consectetur",
+    title: "Architecting Narrative Infrastructure for Communities",
     category: "Media",
     year: "2025",
-    domain: "Placeholder",
+    domain: "Pollen8 Storythinking Lab",
     summary:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+      "Pollen8 Storythinking Lab explores how communities make meaning together across digital and physical spaces. We asked: how might environments invite stories to emerge through participation, lived experience, and reflection rather than top-down messaging?",
     methodology:
-      "Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "We partnered with community builders as design collaborators and studied how conversations, rituals, spatial practices, and digital tools shape collective understanding over time. The work blended observation of everyday practices, lightweight prototypes, and participatory design experiments.",
     findings:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "• Communities need shared frames to orient meaning-making.\n• Meaning emerges from patterns of interaction rather than single broadcasts.\n• Tools shape behavior subtly through defaults, visibility, and timing.\n• Small design decisions can flatten stories or help them grow.\nWe learned narrative is not something you broadcast—it is something you host.",
     relevance:
-      "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      "Treating narrative as infrastructure aligns with Critical Matter’s attention to how material, digital, and social systems shape experience. The project surfaces questions about who defines meaning, whose stories persist, and how computation can support community sense-making.",
   },
   {
     id: 3,
